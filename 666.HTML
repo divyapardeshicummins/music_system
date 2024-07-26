@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Music player</title>
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="style.css">
+
+    <script src="https://kit.fontawesome.com/c4254e24a8.js" crossorigin="anonymous"></script>
+
+
+</head>
+<body>
+    
+    <div class="container">
+
+
+        <div class="musicpla">
+
+            <nav>
+
+                <div class="circle">
+
+                    <a href="cover.html">
+                        <i class="fa-solid fa-angle-left"></i>
+                      </a>
+
+                </div>
+
+
+                <div class="circle"  id="sidebarToggle">
+
+                    <i class="fa-solid fa-bars"></i>
+                </div>
+            </nav>
+
+
+            <img src="mondaymotivation-rockstars-kun-faya-kun-hits-differently-heres-the-proof-001.jpg" class="cover">
+
+            <h1>Kun Faya Kun</h1>
+            <p>AR Rahman</p>
+            <p>Richard tom matt rose rachel angelina</p>
+
+
+            <audio controls id="song">
+
+                <source src="Kun Faaya Kun - Rockstar 128 Kbps.mp3"  type="audio/mpeg">
+
+                
+
+
+            </audio>
+
+            <input type="range" value="0" id="pro">
+
+
+            <div class="controls">
+
+                <div><i class="fa-solid fa-backward"></i></div>
+                <div onclick="playpause()"><i class="fa-solid fa-play"  id="ctrl"></i></div> 
+                <div> <i class="fa-solid fa-forward"></i></div>
+
+            </div>
+        </div>
+
+
+        <aside id="sidebar">
+            <h2>Music Information</h2>
+            <p>Song: Kun Faya Kun</p>
+            <p>Artist: AR Rahman</p>
+            <p>Listeners: Richard, Tom, Matt, Rose, Rachel, Angelina</p>
+
+            <div class="song">
+                <h2>Kun Faya Kun</h2>
+                <p><strong>Artist:</strong> A.R. Rahman, Javed Ali, Mohit Chauhan</p>
+                <p><strong>Movie:</strong> Rockstar (2011)</p>
+                <p><strong>Genre:</strong> Sufi, Bollywood</p>
+                <p><strong>Description:</strong> "Mesmerizing Sufi song with spiritual lyrics that evoke deep emotions.</p>
+            </div>
+            
+            
+        </aside>
+
+
+
+    </div>
+
+
+    <script src="app.js"></script>
+</body>
+</html>
